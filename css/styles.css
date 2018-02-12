@@ -1,0 +1,141 @@
+body {
+    background-color: #333;
+    margin: 0px;
+    background-repeat: no-repeat;
+    outline: solid red 1px;
+}
+
+.stage {
+    /* background-color: skyblue; */
+    width: 800px;
+    height: 600px;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+
+/* .clouds {
+    background-image: url('../img/clouds.png');
+    height: 273px;
+    width: 800px;
+    outline: 1px solid red;
+}
+.buildings {
+    background-image: url('../img/far_bg_1.png');
+    height: 559px;
+    width: 800px;
+    outline: 1px solid purple;
+}
+.street {
+    background-image: url('../img/street.png');
+    height: 62px;
+    width: 800px;
+    outline: 1px solid purple;
+} */
+
+
+/*-------------------------------------
+| Positioning
+-------------------------------------*/
+
+.stage {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /* overflow: hidden; */
+}
+
+
+/* .clouds {
+    position: absolute;
+    left: 0px; top: 0px;
+    background-position: 0px 0px;
+}
+.buildings {
+    position: absolute;
+    left: 0px; top: 0px;
+    background-position: 0px 0px;
+}
+.street {
+    position: absolute;
+    left: 0px; bottom: 0px;
+} */
+
+
+/*-------------------------------------
+| Arrows
+-------------------------------------*/
+
+.arrow {
+    width: 39px;
+    height: 37px;
+    position: absolute;
+    top: 270px;
+    background-position: 0px 0px;
+    /* transition: all .1s; */
+}
+
+.arrow:hover {
+    background-position: 0px -37px;
+}
+
+.arrow.left {
+    background-image: url('../img/arrow-left.png');
+    left: 20px;
+}
+
+.arrow.right {
+    background-image: url('../img/arrow-right.png');
+    right: 20px;
+}
+
+
+/*-------------------------------------
+| Bruce Lee
+-------------------------------------*/
+
+.bruce-lee.bruce-lee {
+    background-image: url('../img/bruce-lee/bruce-lee.png');
+    background-position: left top;
+    width: 262px;
+    height: 418px;
+    position: absolute;
+    bottom: 0px;
+    right: 450px;
+}
+
+.bruce-lee.heavy-bag {
+    background-image: url('../img/bruce-lee/heavy-bag.png');
+    width: 210px;
+    height: 420px;
+    position: absolute;
+    top: 135px;
+    left: 250px;
+}
+
+
+/*-------------------------------------
+| Michael Jackson
+-------------------------------------*/
+
+.michael-jackson.michael-jackson {
+    background-image: url('../img/michael-jackson/michael-jackson.png');
+    background-position: top right;
+    width: 259px;
+    height: 418px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    outline: solid 1px red;
+}
+
+.michael-jackson.mic-stand {
+    background-image: url('../img/michael-jackson/mic-stand.png');
+    background-position: bottom left;
+    width: 149px;
+    height: 209px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    outline: solid 1px red;
+}
