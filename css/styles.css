@@ -1,37 +1,15 @@
 body {
-    background-color: #333;
+    background-color: #1b258b;
     margin: 0px;
     background-repeat: no-repeat;
-    outline: solid red 1px;
 }
 
 .stage {
-    /* background-color: skyblue; */
     width: 800px;
     height: 600px;
     margin: 100px auto;
     overflow: hidden;
 }
-
-
-/* .clouds {
-    background-image: url('../img/clouds.png');
-    height: 273px;
-    width: 800px;
-    outline: 1px solid red;
-}
-.buildings {
-    background-image: url('../img/far_bg_1.png');
-    height: 559px;
-    width: 800px;
-    outline: 1px solid purple;
-}
-.street {
-    background-image: url('../img/street.png');
-    height: 62px;
-    width: 800px;
-    outline: 1px solid purple;
-} */
 
 
 /*-------------------------------------
@@ -42,24 +20,23 @@ body {
     position: relative;
     left: 0px;
     top: 0px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 
-/* .clouds {
+/*-------------------------------------
+| Start Screen
+-------------------------------------*/
+
+.start {
+    background-image: url('../img/start-screen.jpg');
+    width: 800px;
+    height: 600px;
+    background-position: top right;
     position: absolute;
-    left: 0px; top: 0px;
-    background-position: 0px 0px;
+    top: 0px;
+    right: 0px;
 }
-.buildings {
-    position: absolute;
-    left: 0px; top: 0px;
-    background-position: 0px 0px;
-}
-.street {
-    position: absolute;
-    left: 0px; bottom: 0px;
-} */
 
 
 /*-------------------------------------
@@ -71,6 +48,7 @@ body {
     height: 37px;
     position: absolute;
     top: 270px;
+    z-index: 2;
     background-position: 0px 0px;
     /* transition: all .1s; */
 }
@@ -94,23 +72,44 @@ body {
 | Bruce Lee
 -------------------------------------*/
 
-.bruce-lee.bruce-lee {
+.bl.bruce-lee {
     background-image: url('../img/bruce-lee/bruce-lee.png');
     background-position: left top;
     width: 262px;
     height: 418px;
     position: absolute;
-    bottom: 0px;
-    right: 450px;
+    top: -500px;
+    left: 100px;
 }
 
-.bruce-lee.heavy-bag {
+.bl.heavy-bag {
     background-image: url('../img/bruce-lee/heavy-bag.png');
+    background-position: right top;
     width: 210px;
     height: 420px;
     position: absolute;
-    top: 135px;
-    left: 250px;
+    top: 150px;
+    right: 250px;
+}
+
+.bl.yin-yang {
+    background-image: url('../img/bruce-lee/yin-yang.png');
+    background position: left top;
+    width: 210px;
+    height: 208px;
+    position: absolute;
+    top: 0px;
+    left: 280px;
+}
+
+.bl.dojo {
+    background-image: url('../img/bruce-lee/dojo.jpg');
+    background-position: bottom left;
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 }
 
 
@@ -118,7 +117,7 @@ body {
 | Michael Jackson
 -------------------------------------*/
 
-.michael-jackson.michael-jackson {
+.mj.michael-jackson {
     background-image: url('../img/michael-jackson/michael-jackson.png');
     background-position: top right;
     width: 259px;
@@ -126,10 +125,9 @@ body {
     position: absolute;
     bottom: 0px;
     right: 0px;
-    outline: solid 1px red;
 }
 
-.michael-jackson.mic-stand {
+.mj.mic-stand {
     background-image: url('../img/michael-jackson/mic-stand.png');
     background-position: bottom left;
     width: 149px;
@@ -137,5 +135,69 @@ body {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    outline: solid 1px red;
+}
+
+.mj.disco-ball {
+    background-image: url('../img/michael-jackson/disco-ball.png');
+    background-position: top left;
+    width: 283px;
+    height: 282px;
+    position: absolute;
+    top: -15px;
+    left: 240px;
+}
+
+.mj.stage {
+    background-image: url('../img/michael-jackson/stage.jpg');
+    background-position: top left;
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+/*-------------------------------------
+| Muhammad Ali
+-------------------------------------*/
+
+.ma.muhammad-ali {
+    background-image: url('../img/muhammad-ali/muhammad-ali.png');
+    background-position: top right;
+    width: 418px;
+    height: 428px;
+    position: absolute;
+    top: 170px;
+    right: 0px;
+}
+
+.ma.speed-bag {
+    background-image: url('../img/muhammad-ali/speed-bag.png');
+    background-position: bottom left;
+    width: 209px;
+    height: 209px;
+    position: absolute;
+    top: 0px;
+    left: 150px;
+}
+
+.ma.fight-bell {
+    background-image: url('../img/muhammad-ali/fight-bell.png');
+    background-position: top left;
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    top: 0px;
+    left: 260px;
+}
+
+.ma.boxing-ring {
+    background-image: url('../img/muhammad-ali/boxing-ring.png');
+    background-position: bottom left;
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 }
